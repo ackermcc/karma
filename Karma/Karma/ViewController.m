@@ -7,8 +7,6 @@
 //
 
 #import "ViewController.h"
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface ViewController ()
 
@@ -18,10 +16,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     // Do any additional setup after loading the view, typically from a nib.
     FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+    loginButton.delegate = self;
+    loginButton.readPermissions = @[@"public_profile", @"email", @"user_friends"];
     loginButton.center = self.view.center;
     [self.view addSubview:loginButton];
+    
+    if ([FBSDKAccessToken currentAccessToken]) {
+        
+    }
+}
+
+-(void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result error:(NSError *)error {
+    if (!error) {
+        [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:nil]
+         startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
+             if (!error) {
+                 NSLog(@"fetched user:%@", result);
+             }
+         }];
+    }
+}
+
+-(void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton {
+    
 }
 
 - (void)didReceiveMemoryWarning {
