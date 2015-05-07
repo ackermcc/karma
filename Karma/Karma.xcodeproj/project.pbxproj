@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6823B1591BB41F717D405036 /* libPods-Karma.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EAFD3BC2785DE7832CC130 /* libPods-Karma.a */; };
 		F315E4B11AFB27BB00EF2116 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F315E4B01AFB27BB00EF2116 /* main.m */; };
 		F315E4B41AFB27BB00EF2116 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F315E4B31AFB27BB00EF2116 /* AppDelegate.m */; };
 		F315E4B71AFB27BB00EF2116 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F315E4B61AFB27BB00EF2116 /* ViewController.m */; };
@@ -27,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02EAFD3BC2785DE7832CC130 /* libPods-Karma.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Karma.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64E2066412274CCF94CF0EA6 /* Pods-Karma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Karma.release.xcconfig"; path = "Pods/Target Support Files/Pods-Karma/Pods-Karma.release.xcconfig"; sourceTree = "<group>"; };
+		EE348460CE706AEBA19C9F88 /* Pods-Karma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Karma.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Karma/Pods-Karma.debug.xcconfig"; sourceTree = "<group>"; };
 		F315E4AB1AFB27BB00EF2116 /* Karma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F315E4AF1AFB27BB00EF2116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F315E4B01AFB27BB00EF2116 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6823B1591BB41F717D405036 /* libPods-Karma.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +65,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05743664F835B97A2207974A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE348460CE706AEBA19C9F88 /* Pods-Karma.debug.xcconfig */,
+				64E2066412274CCF94CF0EA6 /* Pods-Karma.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F315E4A21AFB27BB00EF2116 = {
 			isa = PBXGroup;
 			children = (
 				F315E4AD1AFB27BB00EF2116 /* Karma */,
 				F315E4C71AFB27BB00EF2116 /* KarmaTests */,
 				F315E4AC1AFB27BB00EF2116 /* Products */,
+				05743664F835B97A2207974A /* Pods */,
+				F399C4CFC9DFA497B0DBF15C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +135,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F399C4CFC9DFA497B0DBF15C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02EAFD3BC2785DE7832CC130 /* libPods-Karma.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F315E4CE1AFB27BB00EF2116 /* Build configuration list for PBXNativeTarget "Karma" */;
 			buildPhases = (
+				7980DA9F413E3CABD25E4E2D /* Check Pods Manifest.lock */,
 				F315E4A71AFB27BB00EF2116 /* Sources */,
 				F315E4A81AFB27BB00EF2116 /* Frameworks */,
 				F315E4A91AFB27BB00EF2116 /* Resources */,
+				4D79C9D49EE7761DD81FECB1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D79C9D49EE7761DD81FECB1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Karma/Pods-Karma-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7980DA9F413E3CABD25E4E2D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F315E4A71AFB27BB00EF2116 /* Sources */ = {
@@ -345,6 +404,7 @@
 		};
 		F315E4CF1AFB27BB00EF2116 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE348460CE706AEBA19C9F88 /* Pods-Karma.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Karma/Info.plist;
@@ -355,6 +415,7 @@
 		};
 		F315E4D01AFB27BB00EF2116 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64E2066412274CCF94CF0EA6 /* Pods-Karma.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Karma/Info.plist;
@@ -416,6 +477,7 @@
 				F315E4D01AFB27BB00EF2116 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F315E4D11AFB27BB00EF2116 /* Build configuration list for PBXNativeTarget "KarmaTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +486,7 @@
 				F315E4D31AFB27BB00EF2116 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
