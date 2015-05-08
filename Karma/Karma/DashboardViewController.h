@@ -1,8 +1,8 @@
 //
-//  ViewController.h
+//  DashboardViewController.h
 //  Karma
 //
-//  Created by Chad Ackerman on 5/6/15.
+//  Created by Chad Ackerman on 5/7/15.
 //  Copyright (c) 2015 Chad Ackerman. All rights reserved.
 //
 
@@ -11,7 +11,6 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import "AppDelegate.h"
 
-@interface ViewController : UIViewController <FBSDKLoginButtonDelegate>
+@interface DashboardViewController : UIViewController <FBSDKLoginButtonDelegate>
 
 @end
-

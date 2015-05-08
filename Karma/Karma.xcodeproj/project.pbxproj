@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6823B1591BB41F717D405036 /* libPods-Karma.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02EAFD3BC2785DE7832CC130 /* libPods-Karma.a */; };
+		F31183871AFC866A0081204A /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F31183861AFC866A0081204A /* DashboardViewController.m */; };
 		F315E4B11AFB27BB00EF2116 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F315E4B01AFB27BB00EF2116 /* main.m */; };
 		F315E4B41AFB27BB00EF2116 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F315E4B31AFB27BB00EF2116 /* AppDelegate.m */; };
 		F315E4B71AFB27BB00EF2116 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F315E4B61AFB27BB00EF2116 /* ViewController.m */; };
@@ -31,6 +32,8 @@
 		02EAFD3BC2785DE7832CC130 /* libPods-Karma.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Karma.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E2066412274CCF94CF0EA6 /* Pods-Karma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Karma.release.xcconfig"; path = "Pods/Target Support Files/Pods-Karma/Pods-Karma.release.xcconfig"; sourceTree = "<group>"; };
 		EE348460CE706AEBA19C9F88 /* Pods-Karma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Karma.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Karma/Pods-Karma.debug.xcconfig"; sourceTree = "<group>"; };
+		F31183851AFC866A0081204A /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
+		F31183861AFC866A0081204A /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
 		F315E4AB1AFB27BB00EF2116 /* Karma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F315E4AF1AFB27BB00EF2116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F315E4B01AFB27BB00EF2116 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 				F315E4B31AFB27BB00EF2116 /* AppDelegate.m */,
 				F315E4B51AFB27BB00EF2116 /* ViewController.h */,
 				F315E4B61AFB27BB00EF2116 /* ViewController.m */,
+				F31183851AFC866A0081204A /* DashboardViewController.h */,
+				F31183861AFC866A0081204A /* DashboardViewController.m */,
 				F315E4B81AFB27BB00EF2116 /* Main.storyboard */,
 				F315E4BB1AFB27BB00EF2116 /* Images.xcassets */,
 				F315E4BD1AFB27BB00EF2116 /* LaunchScreen.xib */,
@@ -281,6 +286,7 @@
 				F315E4B71AFB27BB00EF2116 /* ViewController.m in Sources */,
 				F315E4B41AFB27BB00EF2116 /* AppDelegate.m in Sources */,
 				F315E4B11AFB27BB00EF2116 /* main.m in Sources */,
+				F31183871AFC866A0081204A /* DashboardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
