@@ -56,5 +56,40 @@
             </objects>
             <point key="canvasLocation" x="1062" y="1100"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vAK-Xr-K5W">
+            <objects>
+                <navigationController storyboardIdentifier="newUser" id="fEO-Vh-Rix" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eCD-02-sBr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xgy-NZ-7Mu" kind="relationship" relationship="rootViewController" id="JNt-gj-g2y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yqE-jX-Ebs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="1852"/>
+        </scene>
+        <!--New User-->
+        <scene sceneID="DBA-o9-pcl">
+            <objects>
+                <viewController id="xgy-NZ-7Mu" customClass="NewUserViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K0j-QU-LFT"/>
+                        <viewControllerLayoutGuide type="bottom" id="mYM-80-w0d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gxS-eV-Grc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New User" id="zc1-Fr-blT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6OU-rB-5yb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="1852"/>
+        </scene>
     </scenes>
 </document>

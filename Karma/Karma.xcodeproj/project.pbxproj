@@ -16,6 +16,7 @@
 		F315E4BC1AFB27BB00EF2116 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F315E4BB1AFB27BB00EF2116 /* Images.xcassets */; };
 		F315E4BF1AFB27BB00EF2116 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F315E4BD1AFB27BB00EF2116 /* LaunchScreen.xib */; };
 		F315E4CB1AFB27BB00EF2116 /* KarmaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F315E4CA1AFB27BB00EF2116 /* KarmaTests.m */; };
+		F38254C81B1D6B7A006438D5 /* NewUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38254C71B1D6B7A006438D5 /* NewUserViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		F315E4C41AFB27BB00EF2116 /* KarmaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KarmaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F315E4C91AFB27BB00EF2116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F315E4CA1AFB27BB00EF2116 /* KarmaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KarmaTests.m; sourceTree = "<group>"; };
+		F38254C61B1D6B7A006438D5 /* NewUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewUserViewController.h; sourceTree = "<group>"; };
+		F38254C71B1D6B7A006438D5 /* NewUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewUserViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				F315E4B31AFB27BB00EF2116 /* AppDelegate.m */,
 				F315E4B51AFB27BB00EF2116 /* ViewController.h */,
 				F315E4B61AFB27BB00EF2116 /* ViewController.m */,
+				F38254C61B1D6B7A006438D5 /* NewUserViewController.h */,
+				F38254C71B1D6B7A006438D5 /* NewUserViewController.m */,
 				F31183851AFC866A0081204A /* DashboardViewController.h */,
 				F31183861AFC866A0081204A /* DashboardViewController.m */,
 				F315E4B81AFB27BB00EF2116 /* Main.storyboard */,
@@ -287,6 +292,7 @@
 				F315E4B41AFB27BB00EF2116 /* AppDelegate.m in Sources */,
 				F315E4B11AFB27BB00EF2116 /* main.m in Sources */,
 				F31183871AFC866A0081204A /* DashboardViewController.m in Sources */,
+				F38254C81B1D6B7A006438D5 /* NewUserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

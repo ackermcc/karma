@@ -32,23 +32,41 @@
              if (!error) {
                  NSLog(@"fetched user:%@", result);
                  
-                 //Assign login to user defaults
                  NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-                 [defaults setValue:@"1" forKey:@"authenticatedUser"];
-                 [defaults synchronize];
                  
-                 //Update view
-                 [self actionSignup];
+                 //Check if this is the user first visit
+                 NSObject *obj = [defaults objectForKey:@"authenticatedUser"];
+                 if (obj != nil) {
+                     NSLog(@"Been here before bro.");
+                     
+                     //Update view
+                     [self userSignIn];
+                 } else {
+                     NSLog(@"Brand spankin new user.");
+                     
+                     //Assign login to user defaults
+                     [defaults setValue:@"1" forKey:@"authenticatedUser"];
+                     [defaults synchronize];
+                     
+                     //Update view
+                     [self newUserSignUp];
+                 }
              }
          }];
     }
 }
 
-- (IBAction)actionSignup
+- (void)userSignIn
 {
     AppDelegate *appDelegateTemp = [[UIApplication sharedApplication]delegate];
     
     appDelegateTemp.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+}
+
+-(void)newUserSignUp {
+    AppDelegate *appDelegateTemp = [[UIApplication sharedApplication]delegate];
+    
+    appDelegateTemp.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"newUser"];
 }
 
 -(void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton {
