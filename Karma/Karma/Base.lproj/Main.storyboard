@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hlr-wB-edW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -83,9 +84,86 @@
                     <view key="view" contentMode="scaleToFill" id="gxS-eV-Grc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Idz-Rn-ms9">
+                                <rect key="frame" x="158" y="101" width="285" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="gdg-Wq-dd1"/>
+                                    <constraint firstAttribute="width" constant="285" id="ydz-Mf-kt7"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Provider"/>
+                                    <segment title="Customer"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rag-pJ-nlT">
+                                <rect key="frame" x="36" y="173" width="528" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QRb-ns-yfY">
+                                <rect key="frame" x="36" y="223" width="528" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BVH-vu-ad5">
+                                <rect key="frame" x="36" y="273" width="528" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Adress" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pin-OW-U86">
+                                <rect key="frame" x="36" y="323" width="528" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pin-OW-U86" firstAttribute="trailing" secondItem="gxS-eV-Grc" secondAttribute="trailingMargin" constant="20" id="14w-GJ-se1"/>
+                            <constraint firstItem="QRb-ns-yfY" firstAttribute="leading" secondItem="gxS-eV-Grc" secondAttribute="leadingMargin" constant="20" id="2oE-kV-DxY"/>
+                            <constraint firstItem="pin-OW-U86" firstAttribute="top" secondItem="BVH-vu-ad5" secondAttribute="bottom" constant="20" id="4Z0-ij-9Iq"/>
+                            <constraint firstItem="BVH-vu-ad5" firstAttribute="leading" secondItem="gxS-eV-Grc" secondAttribute="leadingMargin" constant="20" id="52K-hc-Jfz"/>
+                            <constraint firstItem="Idz-Rn-ms9" firstAttribute="top" secondItem="K0j-QU-LFT" secondAttribute="bottom" constant="37" id="9R7-i9-ute"/>
+                            <constraint firstItem="Rag-pJ-nlT" firstAttribute="top" secondItem="Idz-Rn-ms9" secondAttribute="bottom" constant="44" id="A12-mr-nGa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rag-pJ-nlT" secondAttribute="trailing" constant="20" id="GIY-au-xO6"/>
+                            <constraint firstItem="BVH-vu-ad5" firstAttribute="trailing" secondItem="gxS-eV-Grc" secondAttribute="trailingMargin" constant="20" id="HnJ-ts-vpn"/>
+                            <constraint firstAttribute="centerX" secondItem="Idz-Rn-ms9" secondAttribute="centerX" id="Hqm-Ih-C8O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QRb-ns-yfY" secondAttribute="trailing" constant="20" id="OwP-Jz-hKy"/>
+                            <constraint firstItem="pin-OW-U86" firstAttribute="leading" secondItem="gxS-eV-Grc" secondAttribute="leadingMargin" constant="20" id="RFG-85-FkN"/>
+                            <constraint firstItem="Rag-pJ-nlT" firstAttribute="leading" secondItem="gxS-eV-Grc" secondAttribute="leadingMargin" constant="20" id="RXD-sp-cbF"/>
+                            <constraint firstItem="QRb-ns-yfY" firstAttribute="top" secondItem="Rag-pJ-nlT" secondAttribute="bottom" constant="20" id="Sdk-4q-N5p"/>
+                            <constraint firstItem="Rag-pJ-nlT" firstAttribute="leading" secondItem="gxS-eV-Grc" secondAttribute="leadingMargin" constant="20" id="VF4-nu-fuB"/>
+                            <constraint firstItem="Rag-pJ-nlT" firstAttribute="trailing" secondItem="gxS-eV-Grc" secondAttribute="trailingMargin" constant="20" id="VRn-nS-Nvr"/>
+                            <constraint firstItem="BVH-vu-ad5" firstAttribute="leading" secondItem="gxS-eV-Grc" secondAttribute="leadingMargin" constant="20" id="XlL-k1-Hra"/>
+                            <constraint firstItem="QRb-ns-yfY" firstAttribute="leading" secondItem="gxS-eV-Grc" secondAttribute="leadingMargin" constant="20" id="YI1-Uy-ojz"/>
+                            <constraint firstItem="BVH-vu-ad5" firstAttribute="top" secondItem="QRb-ns-yfY" secondAttribute="bottom" constant="20" id="b48-Tm-QFd"/>
+                            <constraint firstItem="QRb-ns-yfY" firstAttribute="trailing" secondItem="gxS-eV-Grc" secondAttribute="trailingMargin" constant="20" id="pnd-gJ-i89"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BVH-vu-ad5" secondAttribute="trailing" constant="20" id="qpF-on-MpN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pin-OW-U86" secondAttribute="trailing" constant="20" id="sIg-1n-g8v"/>
+                            <constraint firstItem="pin-OW-U86" firstAttribute="leading" secondItem="gxS-eV-Grc" secondAttribute="leadingMargin" constant="20" id="vtw-Bo-ilv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="VF4-nu-fuB"/>
+                                <exclude reference="VRn-nS-Nvr"/>
+                                <exclude reference="2oE-kV-DxY"/>
+                                <exclude reference="pnd-gJ-i89"/>
+                                <exclude reference="HnJ-ts-vpn"/>
+                                <exclude reference="XlL-k1-Hra"/>
+                                <exclude reference="14w-GJ-se1"/>
+                                <exclude reference="RFG-85-FkN"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="New User" id="zc1-Fr-blT"/>
+                    <navigationItem key="navigationItem" title="New User" id="zc1-Fr-blT">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="dog-fR-OeW"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="inputEmailAddress" destination="pin-OW-U86" id="UfS-na-85E"/>
+                        <outlet property="inputFirstName" destination="Rag-pJ-nlT" id="WPG-P8-VCx"/>
+                        <outlet property="inputLastName" destination="QRb-ns-yfY" id="oqU-dS-2iI"/>
+                        <outlet property="inputPhoneNumber" destination="BVH-vu-ad5" id="vOm-UD-eYy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6OU-rB-5yb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

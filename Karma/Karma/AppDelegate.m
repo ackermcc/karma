@@ -24,11 +24,10 @@
     if ([[defaults valueForKey:@"authenticatedUser"] isEqualToString:@"1"]) {
         self.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
         NSLog(@"Already logged in");
+    } else if ([defaults valueForKey:@"authenticatingUser"] && ![defaults valueForKey:@"authenticatedUser"]) {
+        self.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"newUser"];
     } else {
-        UIViewController* rootController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"LoginViewController"];
-        UINavigationController* navigation = [[UINavigationController alloc] initWithRootViewController:rootController];
-        
-        self.window.rootViewController = navigation;
+        self.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"LoginViewController"];
         NSLog(@"Gotta log in");
     }
     

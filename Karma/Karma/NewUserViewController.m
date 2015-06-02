@@ -17,6 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    self.userInfo = [NSDictionary new];
+    self.userInfo = [defaults objectForKey:@"authenticatingUser"];
+    
+    NSLog(@"///////////////////////////////////// %@",self.userInfo);
+    self.inputFirstName.text = [self.userInfo valueForKey:@"first_name"];
+    self.inputLastName.text = [self.userInfo valueForKey:@"last_name"];
+    self.inputEmailAddress.text = [self.userInfo valueForKey:@"email"];
 }
 
 - (void)didReceiveMemoryWarning {

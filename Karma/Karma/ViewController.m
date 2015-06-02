@@ -45,7 +45,9 @@
                      NSLog(@"Brand spankin new user.");
                      
                      //Assign login to user defaults
-                     [defaults setValue:@"1" forKey:@"authenticatedUser"];
+//                     [defaults setValue:@"1" forKey:@"authenticatedUser"];
+//                     [defaults synchronize];
+                     [defaults setObject:result forKey:@"authenticatingUser"];
                      [defaults synchronize];
                      
                      //Update view

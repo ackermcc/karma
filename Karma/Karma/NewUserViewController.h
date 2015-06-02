@@ -10,4 +10,10 @@
 
 @interface NewUserViewController : UIViewController
 
+@property (nonatomic) NSDictionary *userInfo;
+@property (weak, nonatomic) IBOutlet UITextField *inputFirstName;
+@property (weak, nonatomic) IBOutlet UITextField *inputLastName;
+@property (weak, nonatomic) IBOutlet UITextField *inputPhoneNumber;
+@property (weak, nonatomic) IBOutlet UITextField *inputEmailAddress;
+
 @end
