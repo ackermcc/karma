@@ -86,7 +86,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Idz-Rn-ms9">
-                                <rect key="frame" x="158" y="101" width="285" height="29"/>
+                                <rect key="frame" x="36" y="101" width="528" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="gdg-Wq-dd1"/>
                                     <constraint firstAttribute="width" constant="285" id="ydz-Mf-kt7"/>
@@ -95,6 +95,11 @@
                                     <segment title="Provider"/>
                                     <segment title="Customer"/>
                                 </segments>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ydz-Mf-kt7"/>
+                                    </mask>
+                                </variation>
                             </segmentedControl>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rag-pJ-nlT">
                                 <rect key="frame" x="36" y="173" width="528" height="30"/>
@@ -123,6 +128,7 @@
                             <constraint firstItem="QRb-ns-yfY" firstAttribute="leading" secondItem="gxS-eV-Grc" secondAttribute="leadingMargin" constant="20" id="2oE-kV-DxY"/>
                             <constraint firstItem="pin-OW-U86" firstAttribute="top" secondItem="BVH-vu-ad5" secondAttribute="bottom" constant="20" id="4Z0-ij-9Iq"/>
                             <constraint firstItem="BVH-vu-ad5" firstAttribute="leading" secondItem="gxS-eV-Grc" secondAttribute="leadingMargin" constant="20" id="52K-hc-Jfz"/>
+                            <constraint firstItem="Idz-Rn-ms9" firstAttribute="leading" secondItem="gxS-eV-Grc" secondAttribute="leadingMargin" constant="20" id="5jr-jR-aCd"/>
                             <constraint firstItem="Idz-Rn-ms9" firstAttribute="top" secondItem="K0j-QU-LFT" secondAttribute="bottom" constant="37" id="9R7-i9-ute"/>
                             <constraint firstItem="Rag-pJ-nlT" firstAttribute="top" secondItem="Idz-Rn-ms9" secondAttribute="bottom" constant="44" id="A12-mr-nGa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Rag-pJ-nlT" secondAttribute="trailing" constant="20" id="GIY-au-xO6"/>
@@ -132,6 +138,7 @@
                             <constraint firstItem="pin-OW-U86" firstAttribute="leading" secondItem="gxS-eV-Grc" secondAttribute="leadingMargin" constant="20" id="RFG-85-FkN"/>
                             <constraint firstItem="Rag-pJ-nlT" firstAttribute="leading" secondItem="gxS-eV-Grc" secondAttribute="leadingMargin" constant="20" id="RXD-sp-cbF"/>
                             <constraint firstItem="QRb-ns-yfY" firstAttribute="top" secondItem="Rag-pJ-nlT" secondAttribute="bottom" constant="20" id="Sdk-4q-N5p"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Idz-Rn-ms9" secondAttribute="trailing" constant="20" id="UiF-Lg-IQl"/>
                             <constraint firstItem="Rag-pJ-nlT" firstAttribute="leading" secondItem="gxS-eV-Grc" secondAttribute="leadingMargin" constant="20" id="VF4-nu-fuB"/>
                             <constraint firstItem="Rag-pJ-nlT" firstAttribute="trailing" secondItem="gxS-eV-Grc" secondAttribute="trailingMargin" constant="20" id="VRn-nS-Nvr"/>
                             <constraint firstItem="BVH-vu-ad5" firstAttribute="leading" secondItem="gxS-eV-Grc" secondAttribute="leadingMargin" constant="20" id="XlL-k1-Hra"/>
@@ -156,6 +163,11 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="New User" id="zc1-Fr-blT">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="gcj-7Y-q1j">
+                            <connections>
+                                <action selector="cancelSignUp:" destination="xgy-NZ-7Mu" id="Ok2-aI-y0D"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Next" id="dog-fR-OeW"/>
                     </navigationItem>
                     <connections>

@@ -42,4 +42,18 @@
 }
 */
 
+- (IBAction)cancelSignUp:(id)sender {
+    //log out of facebook
+    FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
+    [login logOut];
+    
+    //remove defaults record
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:nil forKey:@"authenticatingUser"];
+    [defaults synchronize];
+    
+    //return to log in view
+    AppDelegate *appDelegateTemp = [[UIApplication sharedApplication]delegate];
+    appDelegateTemp.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"LoginViewController"];
+}
 @end

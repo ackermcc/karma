@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import "AppDelegate.h"
 
 @interface NewUserViewController : UIViewController
 
@@ -15,5 +18,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *inputLastName;
 @property (weak, nonatomic) IBOutlet UITextField *inputPhoneNumber;
 @property (weak, nonatomic) IBOutlet UITextField *inputEmailAddress;
+- (IBAction)cancelSignUp:(id)sender;
 
 @end

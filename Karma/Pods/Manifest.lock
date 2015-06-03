@@ -26,6 +26,7 @@ PODS:
   - Bolts/AppLinks (1.1.5):
     - Bolts/Tasks
   - Bolts/Tasks (1.1.5)
+  - CardIO (5.0.6)
   - Facebook-iOS-SDK (4.1.0):
     - Bolts (~> 1.1)
     - Facebook-iOS-SDK/CoreKit (= 4.1.0)
@@ -45,11 +46,13 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5)
+  - CardIO (~> 5.0)
   - Facebook-iOS-SDK (~> 4.1)
 
 SPEC CHECKSUMS:
   AFNetworking: e1d86c2a96bb5d2e7408da36149806706ee122fe
   Bolts: aac24961496d504aa56fc267cde95162a71bac39
+  CardIO: 3fb62d56651d80e8f98e9572bfbe589ebf13d706
   Facebook-iOS-SDK: f42dfb27283bf5f05e3a9edc88459a75b9892d99
 
-COCOAPODS: 0.37.1
+COCOAPODS: 0.37.2

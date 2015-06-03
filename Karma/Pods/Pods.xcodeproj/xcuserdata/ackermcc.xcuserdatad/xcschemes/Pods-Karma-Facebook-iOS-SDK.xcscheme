@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5ACE3020E2DB3EB0B4246D5F"
+               BlueprintIdentifier = "08E2E8D1ECAD2015902CB71D"
                BuildableName = "libPods-Karma-Facebook-iOS-SDK.a"
                BlueprintName = "Pods-Karma-Facebook-iOS-SDK"
                ReferencedContainer = "container:Pods.xcodeproj">
