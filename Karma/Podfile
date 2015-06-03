@@ -4,7 +4,8 @@
 target 'Karma' do
 
 pod 'AFNetworking', '~> 2.5'
-pod 'Facebook-iOS-SDK', '~> 4.1'
+pod 'FBSDKCoreKit', '~> 4.2'
+pod 'FBSDKLoginKit', '~> 4.2'
 pod 'CardIO', '~> 5.0'
 
 end

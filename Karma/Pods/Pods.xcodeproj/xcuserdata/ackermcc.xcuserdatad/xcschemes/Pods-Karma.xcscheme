@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "73C9ADC1C5561DC5815CDEB5"
+               BlueprintIdentifier = "2017B589EFEE42E0E16787B9"
                BuildableName = "libPods-Karma.a"
                BlueprintName = "Pods-Karma"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -27,32 +27,29 @@ PODS:
     - Bolts/Tasks
   - Bolts/Tasks (1.1.5)
   - CardIO (5.0.6)
-  - Facebook-iOS-SDK (4.1.0):
+  - FBSDKCoreKit (4.2.0):
     - Bolts (~> 1.1)
-    - Facebook-iOS-SDK/CoreKit (= 4.1.0)
-    - Facebook-iOS-SDK/LoginKit (= 4.1.0)
-    - Facebook-iOS-SDK/ShareKit (= 4.1.0)
-  - Facebook-iOS-SDK/CoreKit (4.1.0):
+    - FBSDKCoreKit/arc (= 4.2.0)
+    - FBSDKCoreKit/no-arc (= 4.2.0)
+  - FBSDKCoreKit/arc (4.2.0):
     - Bolts (~> 1.1)
-    - Facebook-iOS-SDK/CoreKit/no-arc (= 4.1.0)
-  - Facebook-iOS-SDK/CoreKit/no-arc (4.1.0):
+  - FBSDKCoreKit/no-arc (4.2.0):
     - Bolts (~> 1.1)
-  - Facebook-iOS-SDK/LoginKit (4.1.0):
-    - Bolts (~> 1.1)
-    - Facebook-iOS-SDK/CoreKit
-  - Facebook-iOS-SDK/ShareKit (4.1.0):
-    - Bolts (~> 1.1)
-    - Facebook-iOS-SDK/CoreKit
+    - FBSDKCoreKit/arc
+  - FBSDKLoginKit (4.2.0):
+    - FBSDKCoreKit
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5)
   - CardIO (~> 5.0)
-  - Facebook-iOS-SDK (~> 4.1)
+  - FBSDKCoreKit (~> 4.2)
+  - FBSDKLoginKit (~> 4.2)
 
 SPEC CHECKSUMS:
   AFNetworking: e1d86c2a96bb5d2e7408da36149806706ee122fe
   Bolts: aac24961496d504aa56fc267cde95162a71bac39
   CardIO: 3fb62d56651d80e8f98e9572bfbe589ebf13d706
-  Facebook-iOS-SDK: f42dfb27283bf5f05e3a9edc88459a75b9892d99
+  FBSDKCoreKit: 84b3616a361801f190e43a9909caead7bb6087c7
+  FBSDKLoginKit: 57e37106af12c9e264e473dcb75d7decdbb07fe4
 
 COCOAPODS: 0.37.2

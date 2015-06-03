@@ -14,7 +14,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Karma-Facebook-iOS-SDK.xcscheme</key>
+		<key>Pods-Karma-FBSDKCoreKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Karma-FBSDKLoginKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>08E2E8D1ECAD2015902CB71D</key>
+		<key>0BAB755EC758F0BC440287FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>73C9ADC1C5561DC5815CDEB5</key>
+		<key>12D2F269F17B217D7F3A9F50</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F137DFD2C86C37B7BC15E504</key>
+		<key>1356E15FA5466E75BA0DF3D9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F3BECECE0949D5A08D8A760D</key>
+		<key>2017B589EFEE42E0E16787B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8BCF68374BBAC8E09DB28771</key>
 		<dict>
 			<key>primary</key>
 			<true/>
